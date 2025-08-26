@@ -1,0 +1,47 @@
+# Robots.txt for DG Panchal - DG Group
+# Precision Engineering Website
+
+User-agent: *
+Allow: /
+
+# Disallow test directories and reports
+Disallow: /tests/
+Disallow: /reports/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /temp/
+Disallow: /.vscode/
+
+# Allow important files and directories
+Allow: /assets/
+Allow: /products/
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
+
+# Crawl-delay to be respectful of server resources
+Crawl-delay: 1
+
+# Sitemap locations
+Sitemap: https://dgpanchal.com/sitemap.xml
+Sitemap: https://dgpanchal.com/sitemap-products.xml
+Sitemap: https://dgpanchal.com/sitemap-images.xml
+
+# Allow important search engine bots explicitly
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
